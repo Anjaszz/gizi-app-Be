@@ -30,13 +30,15 @@ const corsOptions = {
            'capacitor://localhost',
            'http://localhost',
            'http://localhost:8100',
-           'https://gizi-cerdas-fe.vercel.app'
+           'https://gizi-cerdas-fe.vercel.app',
+           'http://192.168.25.238:8100'
         ]
       : [
         'capacitor://localhost',
         'http://localhost',
         'http://localhost:8100',
-        'https://gizi-cerdas-fe.vercel.app'
+        'https://gizi-cerdas-fe.vercel.app',
+        'http://192.168.25.238:8100'
         ];
     
     if (allowedOrigins.includes(origin)) {

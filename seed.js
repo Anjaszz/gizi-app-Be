@@ -79,7 +79,7 @@ const educationData = [
 // Script untuk menjalankan seeding
 async function seedEducationData() {
   try {
-    await mongoose.connect(process.env.MONGODB_URI || 'mongodb+srv://username:password@cluster.mongodb.net/gizicerdas?retryWrites=true&w=majority');
+    await mongoose.connect(process.env.MONGODB_URI);
     
     // Hapus data lama
     await NutritionEducation.deleteMany({});
